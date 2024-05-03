@@ -1,0 +1,189 @@
+:root {
+    --primary: #e92b2b;
+    --dark: #080828;
+}
+
+.txt-primary {
+    color: var(--primary);
+}
+
+.txt-dark {
+    color: var(--dark);
+}
+
+.back-primary {
+    background: var(--primary);
+}
+
+.navbar .navbar-logo img {
+    max-width: 150px;
+    width: 100%;
+}
+
+.nav-cstm .nav-link {
+    color: #403636 !important;
+    font-weight: 600;
+}
+
+.hero-sec {
+    background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 50%)), url(/images/hero.jpg) no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-dest {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-dest:hover {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.card-dest:hover .card-overlay {
+    opacity: 1;
+}
+
+.bottom-left-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Airlines */
+
+.menu-content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.airline-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.airline-item a {
+    text-decoration: none;
+    color: var(--dark);
+    transition: color 0.3s ease;
+}
+
+.airline-item a:hover {
+    color: var(--primary);
+}
+
+.btn-view-more {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view-more:hover {
+    background-color: #ff6505;
+    color: var(--dark);
+}
+
+.icon-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.icon-wrapper i {
+    transition: transform 0.3s ease;
+    color: var(--dark);
+}
+
+.icon-wrapper a {
+    color: inherit;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.icon-wrapper:hover i {
+    transform: scale(1.5);
+    color: var(--primary);
+}
+
+.icon-wrapper:hover a {
+    animation: blink 0.3s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        color: var(--dark);
+    }
+    to {
+        color: var(--primary);
+    }
+}
+
+/* Footer */
+
+.container-fluid.footer {
+    color: var(--dark);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.container-fluid.footer a {
+    color: var(--dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.container-fluid.footer a:hover {
+    color: var(--primary);
+}
+
+.container-fluid.footer .icons {
+    transition: transform 0.3s ease;
+}
+
+.container-fluid.footer .icons:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+.parallex{
+    background-image: url("https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    position: relative;
+    z-index: -1;
+    background-attachment: fixed;
+  
+    overflow: hidden;
+}
+.parallex-con{
+    position: absolute;
+   
+}
