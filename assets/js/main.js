@@ -15,5 +15,6 @@ $('.owl-carousel').owlCarousel({
       1000: {
         items: 4
       }
-    }
+    },
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
   })
