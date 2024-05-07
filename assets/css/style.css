@@ -19,6 +19,10 @@
     max-width: 150px;
     width: 100%;
 }
+.navbar-brand img {
+    max-width: 150px;
+    width: 100%;
+}
 
 .nav-cstm .nav-link {
     color: #403636 !important;
@@ -32,63 +36,63 @@
     background-position: center;
 }
 
-.des {
-    font-weight: 750;
-    border-left: 5px solid #1aa8e2;
-    margin-left: 2px;
-    padding: 2px;
-    color: green;
-}
 
-.destination h2 {
-    font-weight: 800;
-}
-
+/* destinaiton card  */
 .destination .destination-img {
     position: relative;
     overflow: hidden;
     z-index: 1;
     border-radius: 10px;
 }
-
-.destination .destination-img .destination-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjusted background color and opacity */
-    color: white;
-    opacity: 0; /* Initially hide the overlay */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Adjusted alignment to bottom */
-    align-items: flex-start; /* Adjusted alignment to left */
-    padding: 10px; /* Added padding */
-    box-sizing: border-box; /* Added to include padding in width and height */
-    transition: opacity 0.5s ease;
-}
-
-.destination .destination-img:hover .destination-overlay {
-    opacity: 1; /* Make the overlay fully visible on hover */
-}
-
 .destination .destination-img img {
     transition: transform 0.5s ease-in-out;
 }
 
 .destination .destination-img:hover img {
     transform: scale(1.2);
+} 
+.card-dest{
+    position: relative;
+}
+.destination-overlay {
+    transition: opacity 0.3s ease;
+    opacity: 0;
 }
 
-.bottom-left-text {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    margin: 0;
-    font-size: 14px;
+.card-dest:hover .destination-overlay {
+    background: linear-gradient(45deg, #b52222, #061976);
+    opacity: 1;
 }
+
+
+.destination-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0.75rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.dest-name{
+    position: absolute;
+    background: linear-gradient(45deg, #b52222, #061976);
+    width: 150px;
+    border-radius: 0px 0px 30px 0px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0.6rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    opacity: 1;
+}
+
+
+
 
 /* Airlines */
 
@@ -96,11 +100,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #fff;
+   
 }
 
 .airline-item {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+   
 }
 
 .airline-item a {
@@ -131,6 +136,7 @@
 .icon-wrapper {
     display: inline-block;
     position: relative;
+    padding: 5px;
 }
 
 .icon-wrapper i {
@@ -149,20 +155,12 @@
     color: var(--primary);
 }
 
-.icon-wrapper:hover a {
-    animation: blink 0.3s infinite alternate;
-}
 
-@keyframes blink {
-    from {
-        color: var(--dark);
-    }
-    to {
-        color: var(--primary);
-    }
-}
+
+
 .icon-wrapper:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ 
 }
 
 /* Footer */
@@ -397,17 +395,19 @@
 
 .post-slide .read-more {
     padding: 7px 20px;
-    float: right;
-    font-size: 12px;
-    background: #2196F3;
+    font-size: 15px;
+    background:var(--primary);
     color: #ffffff;
-    box-shadow: 0px 10px 20px -10px #1376c5;
+    box-shadow: 0px 10px 20px -10px var(--dark);
     border-radius: 25px;
     text-transform: uppercase;
+    text-decoration: none;
+   
 }
 
 .post-slide .read-more:hover {
-    background: #3498db;
+    background: var(--dark);
+    box-shadow: 0px 10px 20px -10px var(--dark);
     text-decoration:none;
     color:#fff;
 }
