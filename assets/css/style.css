@@ -53,6 +53,7 @@
 } 
 .card-dest{
     position: relative;
+    cursor: pointer;
 }
 .destination-overlay {
     transition: opacity 0.3s ease;
@@ -96,12 +97,7 @@
 
 /* Airlines */
 
-.menu-content {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: #fff;
-   
-}
+
 
 .airline-item {
     padding: 10px;
